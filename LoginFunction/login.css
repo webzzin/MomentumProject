@@ -1,0 +1,33 @@
+body{
+  padding: 20px;
+}
+
+.hidden{
+  display:none;
+} 
+
+#greeting{
+  padding: 10px;
+}
+
+
+#sayHello{
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(58, 143, 155);
+  line-height: 1.5rem;
+}
+
+
+#delete{
+  all: unset;
+  box-shadow: 2px 2px 6px darkkhaki;
+  cursor:pointer;
+  font-size: 0.8rem;
+  background-color: green;
+  border-radius: 0.3rem;
+  padding: 1px;
+  color: white;
+  vertical-align: 0.4em;
+}
