@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./login.css">
   <script defer src="./login.js"></script>
-  <title>Momentum App</title>
+  <link rel="stylesheet" href="./login.css">
+  <title>Log-In function</title>
 </head>
 <body>
   <form id="login-form" class="hidden">
-    <input id="userName" required type="text" maxlength="10" placeholder="what is your name?" autocomplete="off">
-    <input type="submit" value="Log In">
+    <fieldset>
+      <legend>Your Name</legend>
+      <input id="username" required type="text" placeholder="what is your name?" maxlength="15" autocomplete="off">
+      <input type="submit" value="Log In">
+    </fieldset>
   </form>
-  <div id="greeting" class="hidden">
+
+  <div id="greeting" class="hidden"> 
     <span id="sayHello"></span>
-    <button id="delete">delete</button>
+    <button class="delete">delete</button>
   </div>
+
 </body>
 </html>

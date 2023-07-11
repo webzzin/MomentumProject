@@ -1,38 +1,38 @@
-const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#userName");
+const inputForm = document.querySelector("#login-form");
+const inputValue = document.querySelector("#username");
 const greeting = document.querySelector("#greeting");
 const sayHello = document.querySelector("#sayHello");
-const deleteButton = document.querySelector("#delete");
+const deleteButton = document.querySelector(".delete");
 
+const USER_KEY = "userID";
+const HIDDEN_CLASS = "hidden";
+const savedUserName = localStorage.getItem(USER_KEY);
 
-const HIDDENCLASS = "hidden";
-const USER_KEY = "username";
-const savedUsername = localStorage.getItem(USER_KEY);
-
-function loginGreetings(){
+function greetingUser(){
   const username = localStorage.getItem(USER_KEY);
-  loginForm.classList.add(HIDDENCLASS);
-  greeting.classList.remove(HIDDENCLASS);
-  sayHello.innerText = `Hello ${username}!`;
+  inputForm.classList.add(HIDDEN_CLASS);
+  greeting.classList.remove(HIDDEN_CLASS);
+  sayHello.innerText = `WELCOME! ${username}`;
 }
 
-
-function handleSubmitLogin(event){
+function submitLoginForm(event){
   event.preventDefault();
-  localStorage.setItem(USER_KEY,loginInput.value);
-  loginGreetings();
+  localStorage.setItem(USER_KEY, inputValue.value);
+  greetingUser();
 }
 
-function handleDelete(){
-  console.log("click");
+function clickDelete(){
   localStorage.removeItem(USER_KEY);
   location.reload();
 }
 
-deleteButton.addEventListener("click", handleDelete);
 
-
-if(savedUsername === null){
-  loginForm.classList.remove(HIDDENCLASS);
-  loginForm.addEventListener("submit", handleSubmitLogin);
-} else { loginGreetings(savedUsername);}
+/* main */ 
+deleteButton.addEventListener("click", clickDelete);
+if(savedUserName===null)
+{
+  inputForm.classList.remove(HIDDEN_CLASS);
+  inputForm.addEventListener("submit", submitLoginForm);
+}
+else
+{ greetingUser(); }
