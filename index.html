@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./AnotherFunction/clock.js"></script>
+  <script defer src="./LoginFunction/login.js"></script>
+  <script defer src="./AnotherFunction/quotes.js"></script>
+  <script defer src="./AnotherFunction/background.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="#">
+  <title>My Page</title>
+</head>
+<body>
+  <h2 id="clock">00:00:00</h2>
+  
+  <form id="login-form" class="hidden">
+    <fieldset>
+      <legend>Your Name</legend>
+      <input id="username" required type="text" placeholder="what is your name?" maxlength="15" autocomplete="off">
+      <input type="submit" value="Log In">
+    </fieldset>
+  </form>
+
+  <div id="greeting" class="hidden"> 
+    <span id="sayHello"></span>
+    <button class="delete">delete</button>
+  </div>
+
+  <div id="quote">
+    <span> </span>
+    <span> </span>
+  </div>
+
+</body>
+</html>
