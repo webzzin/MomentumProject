@@ -8,7 +8,7 @@ const todaysImg = images[rand];
 
 const bgImg=document.createElement("style");
 bgImg.innerText = `body {
-  background-image: url('img/${todaysImg}');
+  background-image: url('../img/${todaysImg}');
   background-size: 100vw 100vh;
 }`
 

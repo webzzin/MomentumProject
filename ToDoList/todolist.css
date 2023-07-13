@@ -1,0 +1,10 @@
+#todo-input{
+  width: 180px;
+}
+#todo-list button{
+  padding: 1px 6px;
+  margin-left: 4px;
+  background-color: cornflowerblue;
+  border-radius: 0.2em;
+  color: white;
+}

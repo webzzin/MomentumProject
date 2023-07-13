@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="./AnotherFunction/clock.js"></script>
-  <script defer src="./LoginFunction/login.js"></script>
-  <script defer src="./AnotherFunction/quotes.js"></script>
-  <script defer src="./AnotherFunction/background.js"></script>
-  <link rel="stylesheet" href="./style.css">
+  <script defer src="../AnotherFunction/todoList.js"></script>
+  <script defer src="../AnotherFunction/clock.js"></script>
+  <script defer src="../LoginFunction/login.js"></script>
+  <script defer src="../AnotherFunction/quotes.js"></script>
+  <script defer src="../AnotherFunction/background.js"></script>
+  <link rel="stylesheet" href="./main.css">
   <link rel="shortcut icon" href="#">
   <title>My Page</title>
 </head>
 <body>
+  <!--clock function-->
   <h2 id="clock">00:00:00</h2>
   
+  <!--login funtion 1 - input -->
   <form id="login-form" class="hidden">
     <fieldset>
       <legend>Your Name</legend>
@@ -21,16 +24,25 @@
       <input type="submit" value="Log In">
     </fieldset>
   </form>
-
+  
+  <!--login funtion 2 - welcom & greeting -->
   <div id="greeting" class="hidden"> 
     <span id="sayHello"></span>
     <button class="delete">delete</button>
   </div>
+  
+  <!--todoList-->
+  <h2 id="todo-title">To Do List</h2>
+  <form id="todo-form">
+    <input type="text" placeholder="Write a To Do and Press" required>
+  </form>
+  <ul id="todo-list"></ul>
 
+
+  <!--quote-->
   <div id="quote">
     <span> </span>
     <span> </span>
   </div>
-
 </body>
 </html>

@@ -17,7 +17,7 @@ body{
   border: unset;
 }
 #login-form legend{
-  background-color: rgb(89, 129, 60);
+  background-color: rgb(194, 205, 187);
   color: white;
   font-size: 0.8em;
   border-radius: 0.6em;
@@ -27,16 +27,16 @@ body{
 #sayHello{
   font-weight: bold;
   font-size: 2.0rem;
-  color: rgb(117, 136, 48);
+  color: rgb(230, 233, 219);
   line-height: 1em;
   margin-left: 180px;
 }
 
 button.delete{
   all:unset;
-  background-color: rgb(153, 206, 21);
+  background-color: rgb(243, 245, 236);
   padding: 2px;
-  color: white;
+  color: rgb(122, 115, 115);
   font-size: 1.0rem;
   border-radius: 0.2rem;
   margin-left: 10px;
@@ -48,8 +48,8 @@ button.delete{
   margin-left: 25px;
   text-align: center;
   font-weight: 400;
-  color: whitesmoke;
-  background-color: rgb(104, 156, 26);
+  color: rgb(52, 59, 41);
+  background-color: whitesmoke;
   width: fit-content;
   padding: 5px 8px;
   border-radius: 2em;
@@ -62,4 +62,31 @@ div#quote{
   color:rgb(204, 201, 227);
   font-size: 1.2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+h2#todo-title{
+  color: whitesmoke;
+  font-weight: 500;
+  margin: 5px;
+  line-height: 1em;
+}
+
+#todo-list{
+  color: rgb(7, 3, 40);
+  background: rgba(249, 247, 247, 0.3);
+  width: fit-content;
+  padding: 10px;
+  margin-top: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#todo-list li{
+  display: block;
+}
+
+#todo-list li button{
+  all: unset;
+  cursor: pointer;
+  margin-left: 10px;
 }
