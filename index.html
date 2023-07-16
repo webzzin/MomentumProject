@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src = "app.js"></script>
+  <title>Main Focus Function</title>
+</head>
+<body>
+  
+  <h1 id="clock">00:00</h1>
+  <form id="login-form" class="hidden">
+    <input required type="text" maxlength="10" placeholder="write your name">
+  </form>
+
+  <h2 id="greeting" class="hidden"></h2>
+  <button class="hidden">X</button>
+
+  <form id="focus" class="hidden">
+    <div>What is your main focus for today?</div>
+    <input required type="text" placeholder="">
+  </form>
+
+  <div id="focusDisplay" class="hidden">
+    <div> today... </div>
+    <button id="focusingTodayDelete">X</button>
+    <span id="focusingToday"></span>
+  </div>
+</body>
+</html>
